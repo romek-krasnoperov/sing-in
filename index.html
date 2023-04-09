@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sing-up</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="logo-side">
+            <div class="logo">
+                <div class="logo-img">
+                    <img src="./odin-lined.png" alt="Odin logo">
+                </div>
+                <div class="logo-text">
+                    <h1>ODIN</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-side">
+
+            <div class="intro">
+                <h3>This is not a real online service! You know, you need something like this in your life to help you realize your deepest dreams.</h3>
+                <h3>Sign up <em>now</em> to get started.</h3>
+                <h3 class="h3-alone">You <em>know</em> you want to</h3>
+            </div>
+
+            <form action="./result.html" method="get" enctype="multipart/form-data">
+                <div class="form-all">
+                    <div class="form">
+                        <h2>Let's do this!</h2>
+                            <div class="name">
+                                <div>
+                                    <label for="first-name">First name</label>
+                                    <input type="text" name="first-name" id="first-name" required>
+                                </div>
+                                <div>
+                                    <label for="last-name">Last name</label>
+                                    <input type="text" name="last-name" id="last-name" required>
+                                </div>
+                            </div>
+                            <div class="contact">
+                                <div>
+                                    <label for="email">Email</label>
+                                    <input type="email" name="email" id="email" required>
+                                </div>
+                                <div>
+                                    <label for="tel">Phone number</label>
+                                    <input type="tel" name="tel" id="tel">
+                                </div>
+                            </div>
+                            <div class="pwd">
+                                <div>
+                                    <label for="psw">Password</label>
+                                    <input data-psw type="password" name="psw" id="psw" required onkeyup="ConfirmPassword();">
+                                </div>
+                                <div>
+                                    <label for="psw-con">Confirm Password</label>
+                                    <input data-psw-con type="password" id="psw-con" required onkeyup="ConfirmPassword();">
+                                    <p data-p-msg id="p-msg">Password</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="button">
+                        <button type="submit">Create Account</button>
+                        <p>Already have an account? <a href="#">Log in</a> </p>
+                    </div>
+    
+                </div>
+            </form>
+
+
+        </div>
+    </div>
+</body>
+</html>
